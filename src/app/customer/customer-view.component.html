@@ -1,0 +1,23 @@
+<h2>
+  Customer Details
+</h2>
+
+<!-- <div>First Name: {{myCustomer.fname}}</div>
+<div appHighlight>Last Name: {{myCustomer.lname}}</div>
+<div>Age: {{myCustomer.age}}</div> -->
+
+<h2>Listing all Customers</h2>
+
+<ul>
+  <li *ngFor = "let cus of allCustomer" >
+    <div>First Name: {{cus.firstName}}</div>
+    <div>Lasst Name: {{cus.lastName}}</div>
+    <!-- <div appHighlight>Age: {{cus.age}}</div> -->
+
+  </li>
+</ul>
+
+<button (click) ="remove()" >Remove Item</button>
+<button (click) = "viewCustomer()">View Customer</button>
+
+<a routerLink ="/order">Go to Order page</a>
